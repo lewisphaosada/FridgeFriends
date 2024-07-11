@@ -8,13 +8,9 @@ const HomeScreen = () => {
     <View style={tw `flex-1`}>
     <StatusBar style="auto" />
     <SafeAreaView style={tw`flex-1`}> 
-      
+
       <BackgroundImage />
-
-      <View>
-      <Text style={tw `text-[2.5rem]`}> Welcome!</Text>
-      </View>
-
+  
       </SafeAreaView>
     </View>
   );

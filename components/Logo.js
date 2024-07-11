@@ -1,26 +1,12 @@
-import{ StyleSheet, Image, View} from 'react-native';
+import{ Image, View} from 'react-native';
+import tw from 'twrnc';
 
 const LogoImage = require('../assets/Logo2.png');
 
 export default function Logo(){
     return(
-        <View style={styles.logoContainer}>
-            <Image source={LogoImage} style={styles.logo}/>
-        </View>
+<View style={tw`absolute top-32 left-1/6.7 transform -translate-x-1/2 items-center`}>
+      <Image source={LogoImage} style={tw`w-72 h-72`} />
+    </View>
     );
 }
-
-const styles = StyleSheet.create({
-    logoContainer: {
-        position: 'absolute',
-        top: 100,
-        left: '25%',
-        transform:[{ translateX: -50  }],
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    logo: {
-        width: 300,
-        height: 300,
-    },
-});

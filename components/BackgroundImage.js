@@ -1,26 +1,18 @@
 import React from 'react';
-import { StyleSheet, ImageBackground } from 'react-native';
+import { ImageBackground } from 'react-native';
 import Logo from './Logo';
 import ColorBlock from './ColorBlock';
+import tw from 'twrnc';
 
 const PlaceholderImage = require('../assets/ScreenBG.jpg');
 
 export default function BackgroundImage() {
   return (
-    <ImageBackground source={PlaceholderImage} style={styles.image} imageStyle={styles.backgroundImage}>
-        <ColorBlock/>
-        <Logo/>
+    <ImageBackground source={PlaceholderImage} style={tw`flex-1`} imageStyle={tw`w-full h-full resizeMode-cover`}>
+        <ColorBlock />
+        <Logo />
     </ImageBackground>
   );
 }
 
-const styles = StyleSheet.create({
-  image: {
-    flex: 1,
-    width: '100%',
-    height: '100%',   
-  },
-  backgroundImage:{
-    resizeMode: 'cover',
-  },
-});
+
