@@ -1,6 +1,6 @@
 import{ StyleSheet, Image, View} from 'react-native';
 
-const LogoImage = require('../assets/Logo.png');
+const LogoImage = require('../assets/Logo2.png');
 
 export default function Logo(){
     return(
@@ -13,15 +13,14 @@ export default function Logo(){
 const styles = StyleSheet.create({
     logoContainer: {
         position: 'absolute',
-        top: 200,
-        left: '35%',
+        top: 100,
+        left: '25%',
         transform:[{ translateX: -50  }],
         alignItems: 'center',
         justifyContent: 'center',
     },
     logo: {
-        width: 250,
-        height: 100,
-        borderRadius:10,
+        width: 300,
+        height: 300,
     },
 });
