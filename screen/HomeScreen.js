@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, View, Text } from 'react-native';
-import BackgroundImage from '../components/BackgroundImage';
+import HomePage from '../components/HomePage';
 import tw from "twrnc";
 
 const HomeScreen = () => {
@@ -9,8 +9,8 @@ const HomeScreen = () => {
     <StatusBar style="auto" />
     <SafeAreaView style={tw`flex-1`}> 
 
-      <BackgroundImage />
-  
+      <HomePage />
+ 
       </SafeAreaView>
     </View>
   );
